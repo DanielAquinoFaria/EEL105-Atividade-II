@@ -1,0 +1,72 @@
+% Template for articles for CCR (Computational Communication Research)
+
+% This file contains information such as author, title, etc.
+% Edit the body.tex file to add the contents (or change the \input{body} below)
+
+\documentclass{ccr}
+\usepackage{amsmath}
+\usepackage{etoolbox}
+\usepackage{mathtools}
+\numberwithin{equation}{subsection}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{csvsimple,longtable,booktabs}
+\usepackage{graphicx}
+
+% Note - lines starting with a % are completely ignored by latex and function as comments
+% See https://www.overleaf.com/read/hmwdsgcqkxrd for a complete example article
+
+% The first part of the latex document contains metadata
+
+% Regular metadata (title, authors etc)
+\title{Atividade II}
+\authorsnames{Daniel Florencio de Aquino Faria}
+% Short author list for footer
+
+
+% Note that you need to provide as many affiliations as authors
+% If multiple authors have the same affiliation, please copy that record as needed
+\authorsaffiliations{
+  {Universidade Federal do ABC}, 
+}
+
+% You can add or rename the bibliography file(s) here
+% Note that you can exported them from endnote or zotero directly and upload them to overleaf
+\addbibresource{bibliography.bib}
+
+
+% The following information is provided by the journal when moving to production
+
+
+% some packages that are generally useful when writing articles in latex
+\usepackage{tabularx}  % for full-width tables
+\usepackage{booktabs}  % for nicer horizontal lines in tables
+\usepackage[mode=text]{siunitx} % for centering columns on the decimal mark
+\usepackage{graphicx} % for including figures
+\usepackage{csquotes}\MakeOuterQuote{"}  % to allow "double quotes" instead of ``double quote''
+\usepackage[hidelinks]{hyperref} % for URLs and other hyperlinks
+
+
+\begin{document}
+\maketitle
+
+\input{body.tex}
+% Include the body
+% Note: You can also type it directly here, or include a file per section, whatever works best for you
+
+
+
+
+% Bibliography
+
+% Uncomment the next line (\nocite{*}) if you want to include all items from your .bib file
+% (e.g. if you didn't use the \textcite or \parencite commands above)
+ \nocite{*}
+
+% This command generates the bibliography
+\newpage
+\printbibliography
+
+
+\end{document}
+
